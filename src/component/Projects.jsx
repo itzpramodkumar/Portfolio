@@ -1,6 +1,8 @@
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
-
+import img from "../assets/img/portfolio.webp"
+import img1 from "../assets/img/petrol.webp"
+import img2 from "../assets/img/denom .png"
 function Projects() {
 
 const projects = [
@@ -8,7 +10,7 @@ const projects = [
 {
 title:"Fuel Management System",
 desc:"A MERN stack application for managing petrol pump fuel sales and reports.",
-image:"https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+image:img1,
 github:"https://github.com/itzpramodkumar/Mern_FullStack_Project",
 live:"#"
 },
@@ -16,15 +18,15 @@ live:"#"
 {
 title:"Portfolio Website",
 desc:"Personal developer portfolio built using React and Tailwind CSS.",
-image:"https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-github:"#",
+image:img,
+github:"https://github.com/itzpramodkumar/Portfolio",
 live:"#"
 },
 
 {
-title:"Blog Application",
-desc:"A full stack blog application with authentication and CRUD features.",
-image:"https://images.unsplash.com/photo-1518770660439-4636190af475",
+title:"Denom Tech Pvt ltd",
+desc:"A full stack software company application with authentication and CRUD features.",
+image:img2,
 github:"#",
 live:"#"
 }
@@ -45,8 +47,6 @@ className="relative py-20 md:py-24 px-4 sm:px-6 bg-transparent overflow-hidden"
 
 <div className="max-w-7xl mx-auto relative z-10">
 
-{/* MAIN BOX */}
-
 <motion.div
 initial={{opacity:0,scale:0.9}}
 whileInView={{opacity:1,scale:1}}
@@ -54,13 +54,9 @@ transition={{duration:0.6}}
 className="border border-cyan-400/20 rounded-3xl p-6 sm:p-8 md:p-12 shadow-[0_0_40px_rgba(34,211,238,0.1)]"
 >
 
-{/* heading */}
-
 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 md:mb-14 bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 text-transparent bg-clip-text">
 My Projects
 </h2>
-
-{/* projects grid */}
 
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
 

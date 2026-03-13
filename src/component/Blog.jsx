@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Calendar, User, ArrowRight } from "lucide-react";
 
+
 const blogData = [
   {
     id: 1,
@@ -9,6 +10,7 @@ const blogData = [
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
     author: "Pramod Kumar",
     date: "12 Mar 2026",
+    link: "https://www.underratedcoder.com/blog/mern-stack-developer-course-2026"
   },
   {
     id: 2,
@@ -17,6 +19,7 @@ const blogData = [
     image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
     author: "Pramod Kumar",
     date: "10 Mar 2026",
+    link: "https://blog.logrocket.com/a-complete-guide-to-react-performance-optimization/"
   },
   {
     id: 3,
@@ -25,6 +28,7 @@ const blogData = [
     image: "https://images.unsplash.com/photo-1550439062-609e1531270e",
     author: "Pramod Kumar",
     date: "8 Mar 2026",
+    link: "https://blog.logrocket.com/deep-dive-react-fiber/"
   },
   {
     id: 4,
@@ -33,6 +37,7 @@ const blogData = [
     image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a",
     author: "Pramod Kumar",
     date: "6 Mar 2026",
+    link: "https://www.almabetter.com/bytes/cheat-sheet/tailwind"
   },
 ];
 
@@ -40,12 +45,13 @@ const Blog = () => {
   return (
     <section
       className="relative py-20 md:py-24 px-4 sm:px-6 bg-transparent overflow-hidden text-white"
+      id="Blog"
     >
 
       {/* background glow */}
 
-      <div className="absolute w-[400px] md:w-[500px] h-[400px] md:h-[500px]  blur-[180px] md:blur-[200px] -top-32 -left-32"></div>
-      <div className="absolute w-[400px] md:w-[500px] h-[400px] md:h-[500px]  blur-[180px] md:blur-[200px] -bottom-32 -right-32"></div>
+      <div className="absolute w-[400px] md:w-[500px] h-[400px] md:h-[500px] blur-[180px] md:blur-[200px] -top-32 -left-32"></div>
+      <div className="absolute w-[400px] md:w-[500px] h-[400px] md:h-[500px] blur-[180px] md:blur-[200px] -bottom-32 -right-32"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
 
@@ -103,9 +109,14 @@ const Blog = () => {
 
                   </div>
 
-                  {/* BUTTON */}
+                  {/* BUTTON WITH LINK */}
 
-                  <button className="flex items-center gap-2 px-5 py-2 rounded-lg border border-white/20 relative overflow-hidden group-hover:border-cyan-400 transition">
+                  <a
+                    href={blog.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-5 py-2 rounded-lg border border-white/20 relative overflow-hidden group-hover:border-cyan-400 transition w-fit"
+                  >
 
                     <span className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-400 opacity-0 group-hover:opacity-100 transition"></span>
 
@@ -114,7 +125,7 @@ const Blog = () => {
                       <ArrowRight size={16}/>
                     </span>
 
-                  </button>
+                  </a>
 
                 </div>
 

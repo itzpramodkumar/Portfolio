@@ -1,3 +1,6 @@
+
+import Spacebackground from "./component/Spacebackground"
+import Footer from "./component/Footer"
 import Navbar from "./component/Navbar"
 import Hero from "./component/Hero"
 import About from "./component/About"
@@ -8,6 +11,7 @@ import Blog from "./component/Blog"
 import GithubStats from "./component/GithubStats"
 import Testimonials from "./component/Testimonials"
 import Contact from "./component/Contact"
+
 
 
 
@@ -40,13 +44,14 @@ return(
 
 <Footer/>
 
+
+
+
+
 </div>
 
 )
 
 }
-import SpaceBackground from "./component/Spacebackground"
-import Spacebackground from "./component/Spacebackground"
-import Footer from "./component/Footer"
 
 export default App

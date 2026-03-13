@@ -4,10 +4,10 @@ import { FaQuoteLeft, FaLinkedin } from "react-icons/fa";
 
 import img1 from "../assets/img/harsh.jpeg";
 import img2 from "../assets/img/pinku.jpeg";
-import img3 from "../assets/img/savej.jpeg";
+import img3 from "../assets/img/naveen.png";
 import img4 from "../assets/img/akhtar ali.jpeg";
-import img5 from "../assets/img/Kavindra.jpeg";
-import img6 from "../assets/img/akhtar ali.jpeg";
+import img5 from "../assets/img/nitin.jpeg";
+import img6 from "../assets/img/deepanshu.jpeg";
 
 import "swiper/css";
 
@@ -16,17 +16,17 @@ function Testimonials() {
 const testimonials = [
 
 {
-name:"Kavindra Singh",
+name:"Engg Nitin Chauhan",
 message:"Pramod is a talented MERN developer and builds amazing web applications.",
 image: img5,
-linkedin:"https://www.linkedin.com/in/kavindrasingh710/"
+linkedin:"https://www.linkedin.com/in/nitin-chauhan-51aa4733b/"
 },
 
 {
-name:"Savej Ali",
+name:"Engg Naveen Gautam",
 message:"Very professional developer. His projects are clean and scalable.",
 image: img3,
-linkedin:"https://www.linkedin.com/in/savej-ali"
+linkedin:"https://www.linkedin.com/in/thenaveengautam/"
 },
 
 {
@@ -51,7 +51,7 @@ linkedin:"https://www.linkedin.com/in/deepanshu-garg-b48202113/"
 },
 
 {
-name:"Harsh Grewal",
+name:" Engg Harsh Grewal",
 message:"Very creative developer. His portfolio and UI design skills are outstanding.",
 image: img1,
 linkedin:"https://www.linkedin.com/in/harshgrewal1309/"
@@ -69,7 +69,7 @@ className="py-28 px-6 bg-transparent text-white"
 <div className="max-w-6xl mx-auto text-center">
 
 <h2 className="text-4xl font-bold mb-16">
-Client <span className="text-blue-400">Testimonials</span>
+Engineers <span className="text-blue-400">Testimonials</span>
 </h2>
 
 <Swiper
